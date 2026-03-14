@@ -75,6 +75,12 @@ Form ini juga memiliki validasi input. Field Title dan Category wajib diisi, sed
 <img alt="image" src="https://github.com/k149191/Assets_Kai/blob/main/image/pab/login.png" width="30%" height="auto">
 </p>
 
+```
+data dummy
+username: kai
+pass: Kai123
+```
+
 - Digunakan agar pengguna dapat masuk ke dalam aplikasi menggunakan akun yang sudah terdaftar.
 - Pengguna mengisi username dan password pada form login.
 - Sistem akan memeriksa apakah username dan password sesuai dengan data yang tersimpan di database.
