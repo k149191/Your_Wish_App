@@ -19,7 +19,7 @@ Dengan 3 TextField yaitu Title, Price, dan Notes. Dan 1 Dropdown Category.
 
 2. Mengupdate wishlist yang ada
 <p align="center">
-  <img alt="image" src="https://github.com/user-attachments/assets/db973ec7-3805-441d-8e96-7c3497eb2fa4" width="30%" height="auto">
+
 </p>
 
 3. Menghapus wishlist dengan konfirmasi
