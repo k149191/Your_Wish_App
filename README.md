@@ -23,7 +23,7 @@ Form ini juga memiliki validasi input. Field Title dan Category wajib diisi, sed
 
 ## 2. Mengupdate wishlist yang ada
 <p align="center">
-
+ <img alt="image" src="https://github.com/k149191/Assets_Kai/blob/main/image/pab/update.png" width="30%" height="auto">
 </p>
 
 ## 3. Menghapus wishlist dengan konfirmasi
@@ -48,7 +48,7 @@ Form ini juga memiliki validasi input. Field Title dan Category wajib diisi, sed
 
 ## 7. Home Page
 <p align="center">
-  <img alt="image" src="https://github.com/user-attachments/assets/7b428faf-1ebe-4886-960d-b15277562f13" width="30%" height="auto">
+  <img alt="image" src="https://github.com/k149191/Assets_Kai/blob/main/image/pab/homepage.png" width="30%" height="auto">
 </p>
 
 ## 8. Multi Navigation Page
@@ -61,7 +61,7 @@ Form ini juga memiliki validasi input. Field Title dan Category wajib diisi, sed
 
 ## 9. Register
 <p align="center">
-
+<img alt="image" src="https://github.com/k149191/Assets_Kai/blob/main/image/pab/regis.png" width="30%" height="auto">
 </p>
 
 - Digunakan untuk membuat akun baru agar pengguna dapat menggunakan aplikasi.
@@ -72,7 +72,7 @@ Form ini juga memiliki validasi input. Field Title dan Category wajib diisi, sed
 
 ## 10. Login
 <p align="center">
-
+<img alt="image" src="https://github.com/k149191/Assets_Kai/blob/main/image/pab/login.png" width="30%" height="auto">
 </p>
 
 - Digunakan agar pengguna dapat masuk ke dalam aplikasi menggunakan akun yang sudah terdaftar.
@@ -84,52 +84,52 @@ Form ini juga memiliki validasi input. Field Title dan Category wajib diisi, sed
 ## 11. Dark Mode & Light Mode
   ###  1). Dark Mode
 <p align="center">
-
+<img alt="image" src="https://github.com/k149191/Assets_Kai/blob/main/image/pab/homepage%20dark%20mode.png" width="30%" height="auto">
 </p>
 
 <p align="center">
-
+<img alt="image" src="https://github.com/k149191/Assets_Kai/blob/main/image/pab/add%20dark%20mode.png" width="30%" height="auto">
 </p>
 
 <p align="center">
-
+<img alt="image" src="https://github.com/k149191/Assets_Kai/blob/main/image/pab/list%20dark%20mode.png" width="30%" height="auto">
 </p>
 
   ### 2). Light Mode
 <p align="center">
-
+<img alt="image" src="https://github.com/k149191/Assets_Kai/blob/main/image/pab/homepage.png" width="30%" height="auto">
 </p>
 
 <p align="center">
-
+<img alt="image" src="https://github.com/user-attachments/assets/1892efb3-9e9f-4c30-94a6-cdb3a35dc182" width="30%" height="auto">
 </p>
 
 <p align="center">
-
+<img alt="image" src="https://github.com/user-attachments/assets/1077d065-03ad-4e8b-9790-a49790c031ec" width="30%" height="auto">
 </p>
 
 # Widget yang Digunakan
 Aplikasi ini dibangun menggunakan berbagai widget Flutter, antara lain:
-- Scaffold
-- AppBar
-- Column
-- Row
-- Expanded
-- Padding
-- Container
-- SizedBox
-- SingleChildScrollView
-- ListView.builder
-- TextField
-- DropdownButtonFormField
-- SnackBar
-- IconButton
-- ElevatedButton
-- TextButton
-- AlertDialog
-- Navigator
-- BoxDecoration
-- BorderRadius
-- BoxShadow
-- OutlineInputBorder
+* Scaffold
+* AppBar
+* Column
+* Row
+* Expanded
+* Padding
+* Container
+* SizedBox
+* SingleChildScrollView
+* ListView.builder
+* TextField
+* DropdownButtonFormField
+* SnackBar
+* IconButton
+* ElevatedButton
+* TextButton
+* AlertDialog
+* Navigator
+* BoxDecoration
+* BorderRadius
+* BoxShadow
+* OutlineInputBorder
 
