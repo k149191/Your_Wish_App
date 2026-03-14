@@ -76,7 +76,7 @@ Form ini juga memiliki validasi input. Field Title dan Category wajib diisi, sed
 </p>
 
 ```
-data dummy
+demo account
 username: kai
 pass: Kai123
 ```
