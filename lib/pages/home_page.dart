@@ -92,6 +92,53 @@ class _HalamanHome extends StatelessWidget {
     required this.onMulai,
   });
 
+void _konfirmasiLogout(BuildContext context) {
+    showDialog(
+      context: context,
+      builder: (ctx) => AlertDialog(
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(20),
+        ),
+        title: const Text('Logout'),
+        content: const Text('Are you sure you want to log out?'),
+        actions: [
+          TextButton(
+            onPressed: () => Navigator.pop(ctx), 
+            style: TextButton.styleFrom(
+              foregroundColor: Theme.of(context).brightness == Brightness.dark
+                  ? Colors.white70
+                  : const Color.fromARGB(255, 22, 22, 22),
+            ),
+            child: const Text(
+              'Cancel',
+              style: TextStyle(
+                fontWeight: FontWeight.w600,
+              ),
+            ),
+          ),
+          ElevatedButton(
+            onPressed: () {
+              Get.changeThemeMode(ThemeMode.light); 
+              
+              Navigator.pop(ctx);
+              Get.offAll(() => const LoginPage());
+            },
+            style: ElevatedButton.styleFrom(
+              backgroundColor: const Color.fromARGB(255, 232, 135, 166),
+              foregroundColor: Colors.white,
+            ),
+            child: const Text(
+              'Yes, Logout',
+              style: TextStyle(
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     return Stack(
@@ -158,11 +205,11 @@ class _HalamanHome extends StatelessWidget {
               color: Get.isDarkMode ? Colors.white : const Color(0xff3b2b2b),
             ),
             onPressed: () {
-              Get.offAll(() => const LoginPage());
+              _konfirmasiLogout(context);
             },
             tooltip: 'Logout',
           ),
-        ),        
+        ),       
 
         Positioned(
           top: 10,

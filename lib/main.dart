@@ -22,22 +22,20 @@ class MainApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return GetMaterialApp(
+return GetMaterialApp(
       title: 'Your Wish',
       debugShowCheckedModeBanner: false,
-
       theme: ThemeData(
         brightness: Brightness.light,
-        primarySwatch: Colors.pink,
+        primaryColor: Colors.pink,
+        scaffoldBackgroundColor: const Color(0xFFFFF8FB),
       ),
-
       darkTheme: ThemeData(
         brightness: Brightness.dark,
-        primarySwatch: Colors.pink,
+        primaryColor: Colors.pink,
+        scaffoldBackgroundColor: const Color(0xff121212), 
       ),
-
-      themeMode: ThemeMode.light,
-
+      themeMode: ThemeMode.light, 
       home: const LoginPage(),
     );
   }

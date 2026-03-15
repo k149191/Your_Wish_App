@@ -84,25 +84,18 @@ class _LoginPageState extends State<LoginPage> {
       child: TextField(
         controller: controller,
         obscureText: obscure,
+        style: const TextStyle(color: Color(0xff3b2b2b)), 
         decoration: InputDecoration(
           hintText: hint,
           filled: true,
-          fillColor: Colors.white,
-
+          fillColor: Colors.white, 
           enabledBorder: OutlineInputBorder(
             borderRadius: BorderRadius.circular(12),
-            borderSide: const BorderSide(
-              color: Color(0xFFFFC0D6),
-              width: 1.5,
-            ),
+            borderSide: const BorderSide(color: Color(0xFFFFC0D6), width: 1.5),
           ),
-
           focusedBorder: OutlineInputBorder(
             borderRadius: BorderRadius.circular(12),
-            borderSide: const BorderSide(
-              color: Color(0xFFFFA0C0),
-              width: 2,
-            ),
+            borderSide: const BorderSide(color: Color(0xFFFFA0C0), width: 2),
           ),
         ),
       ),
