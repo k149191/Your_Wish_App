@@ -49,7 +49,6 @@ class _LoginPageState extends State<LoginPage> {
 
         showMsg("Welcome back! You have successfully logged in.");
 
-        // PINDAH KE HOME PAGE
         Future.delayed(const Duration(milliseconds: 500), (){
           Get.offAll(() => const HomePage());
         });
