@@ -48,7 +48,7 @@ Form ini juga memiliki validasi input. Field Title dan Category wajib diisi, sed
 
 ## 7. Home Page
 <p align="center">
-  <img alt="image" src="https://github.com/k149191/Assets_Kai/blob/main/image/pab/homepage.png" width="30%" height="auto">
+  <img alt="image" src="https://github.com/k149191/Assets_Kai/blob/main/image/pab/homepage%20light%20new.png" width="30%" height="auto">
 </p>
 
 ## 8. Multi Navigation Page
@@ -90,7 +90,7 @@ pass: Kai123
 ## 11. Dark Mode & Light Mode
   ###  1). Dark Mode
 <p align="center">
-<img alt="image" src="https://github.com/k149191/Assets_Kai/blob/main/image/pab/homepage%20dark%20mode.png" width="30%" height="auto">
+<img alt="image" src="https://github.com/k149191/Assets_Kai/blob/main/image/pab/homepage%20dark%20new.png" width="30%" height="auto">
 </p>
 
 <p align="center">
@@ -103,7 +103,7 @@ pass: Kai123
 
   ### 2). Light Mode
 <p align="center">
-<img alt="image" src="https://github.com/k149191/Assets_Kai/blob/main/image/pab/homepage.png" width="30%" height="auto">
+<img alt="image" src="https://github.com/k149191/Assets_Kai/blob/main/image/pab/homepage%20light%20new.png" width="30%" height="auto">
 </p>
 
 <p align="center">
@@ -112,6 +112,11 @@ pass: Kai123
 
 <p align="center">
 <img alt="image" src="https://github.com/user-attachments/assets/1077d065-03ad-4e8b-9790-a49790c031ec" width="30%" height="auto">
+</p>
+
+## 12. Logout
+<p align="center">
+<img alt="image" src="https://github.com/k149191/Assets_Kai/blob/main/image/pab/logout%20validation.png" width="30%" height="auto">
 </p>
 
 # Widget yang Digunakan
