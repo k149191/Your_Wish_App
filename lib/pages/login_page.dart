@@ -46,11 +46,13 @@ class _LoginPageState extends State<LoginPage> {
         showMsg("Username or password is incorrect.");
 
       }else{
+        
+        int loggedInUserId = data['id_users'];
 
         showMsg("Welcome back! You have successfully logged in.");
 
         Future.delayed(const Duration(milliseconds: 500), (){
-          Get.offAll(() => const HomePage());
+          Get.offAll(() => HomePage(activeUserId: loggedInUserId));
         });
 
       }

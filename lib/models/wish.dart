@@ -1,5 +1,6 @@
 class Wish {
-  final int id;
+  final int idWish;
+  final int idUsers;
   final DateTime? createdAt;
   final String title;
   final double? price;
@@ -7,7 +8,8 @@ class Wish {
   final String notes;
 
   Wish({
-    required this.id,
+    required this.idWish, 
+    required this.idUsers, 
     this.createdAt,
     required this.title,
     this.price,
@@ -17,7 +19,8 @@ class Wish {
 
   factory Wish.fromMap(Map<String, dynamic> map) {
     return Wish(
-      id: map['id'],
+      idWish: map['id_wish'],
+      idUsers: map['id_users'],
       createdAt: map['created_at'] != null
           ? DateTime.parse(map['created_at'])
           : null,
@@ -36,6 +39,7 @@ class Wish {
       'price': price,
       'category': category,
       'notes': notes,
+      'id_users': idUsers,
     };
   }
 }

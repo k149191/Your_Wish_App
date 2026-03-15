@@ -5,10 +5,12 @@ import '../models/wish.dart';
 
 class AddPage extends StatefulWidget {
   final Wish? wishYangDiedit;
+  final int activeUserId;
 
   const AddPage({
     super.key,
     this.wishYangDiedit,
+    required this.activeUserId, 
   });
 
   @override
@@ -116,6 +118,7 @@ class _AddPageState extends State<AddPage> {
           'price': price,
           'category': category,
           'notes': notes,
+          'id_users': widget.activeUserId, 
         });
 
         _showSnack('Wish added successfully');
@@ -130,7 +133,8 @@ class _AddPageState extends State<AddPage> {
               'category': category,
               'notes': notes,
             })
-            .eq('id', widget.wishYangDiedit!.id);
+            .eq('id_wish', widget.wishYangDiedit!.idWish)
+            .eq('id_users', widget.activeUserId);
 
         _showSnack('Wish updated successfully');
       }

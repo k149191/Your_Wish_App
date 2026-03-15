@@ -2,9 +2,12 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'add_page.dart';
 import 'list_page.dart';
+import 'login_page.dart';
 
 class HomePage extends StatefulWidget {
-  const HomePage({super.key});
+  final int activeUserId;
+
+  const HomePage({super.key, required this.activeUserId});
 
   @override
   State<HomePage> createState() => _HomePageState();
@@ -22,9 +25,9 @@ class _HomePageState extends State<HomePage> {
         onMulai: () => setState(() => currentPage = 1),
       );
     } else if (currentPage == 1) {
-      halamanAktif = const AddPage();
+      halamanAktif = AddPage(activeUserId: widget.activeUserId);
     } else {
-      halamanAktif = const ListPage();
+      halamanAktif = ListPage(activeUserId: widget.activeUserId);
     }
 
     return Scaffold(
@@ -145,6 +148,21 @@ class _HalamanHome extends StatelessWidget {
             ],
           ),
         ),
+
+        Positioned(
+          top: 10,
+          left: 10,
+          child: IconButton(
+            icon: Icon(
+              Icons.logout_rounded,
+              color: Get.isDarkMode ? Colors.white : const Color(0xff3b2b2b),
+            ),
+            onPressed: () {
+              Get.offAll(() => const LoginPage());
+            },
+            tooltip: 'Logout',
+          ),
+        ),        
 
         Positioned(
           top: 10,

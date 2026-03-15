@@ -6,7 +6,9 @@ import 'add_page.dart';
 const pinkPrimary = Color.fromARGB(255, 232, 135, 166);
 
 class ListPage extends StatefulWidget {
-  const ListPage({super.key});
+  final int activeUserId;
+
+  const ListPage({super.key, required this.activeUserId});
 
   @override
   State<ListPage> createState() => _ListPageState();
@@ -33,13 +35,17 @@ class _ListPageState extends State<ListPage> {
     final response = await supabase
         .from('wishes')
         .select()
+        .eq('id_users', widget.activeUserId)
         .order('created_at', ascending: false);
 
     wishes = response.map<Wish>((data) {
       return Wish(
-        id: data['id'] is int
-            ? data['id']
-            : int.tryParse(data['id'].toString()),
+        idWish: data['id_wish'] is int
+            ? data['id_wish']
+            : int.tryParse(data['id_wish'].toString()) ?? 0,
+        idUsers: data['id_users'] is int
+            ? data['id_users']
+            : int.tryParse(data['id_users'].toString()) ?? 0,
         title: data['title'] ?? '',
         price: data['price'] != null
             ? (data['price'] is double
@@ -56,12 +62,13 @@ class _ListPageState extends State<ListPage> {
     setState(() {});
   }
 
-  Future<void> deleteWish(String id) async {
+  Future<void> deleteWish(int idWish) async {
 
     await supabase
         .from('wishes')
         .delete()
-        .eq('id', int.parse(id));
+        .eq('id_wish', idWish)
+        .eq('id_users', widget.activeUserId);
 
     fetchWishes();
   }
@@ -209,6 +216,7 @@ class _ListPageState extends State<ListPage> {
                             MaterialPageRoute(
                               builder: (context) => AddPage(
                                 wishYangDiedit: wish,
+                                activeUserId: widget.activeUserId,
                               ),
                             ),
                           );
@@ -254,7 +262,7 @@ class _ListPageState extends State<ListPage> {
           ElevatedButton(
             onPressed: () {
               Navigator.pop(ctx);
-              deleteWish(wish.id.toString());
+              deleteWish(wish.idWish);
             },
             style: ElevatedButton.styleFrom(
               backgroundColor: pinkPrimary,
